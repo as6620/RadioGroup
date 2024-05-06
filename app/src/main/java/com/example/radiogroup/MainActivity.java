@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void goChange(View view) {
-        
+        if (swtch.isChecked())
+        {
+            if (rbRed.isChecked()) TL.setBackgroundColor(Color.RED);
+            else if (rbYellow.isChecked()) TL.setBackgroundColor(Color.YELLOW);
+            else if (rbBlue.isChecked()) TL.setBackgroundColor(Color.BLUE);
+            else if (rbGreen.isChecked()) TL.setBackgroundColor(Color.GREEN);
+        }
     }
 }
