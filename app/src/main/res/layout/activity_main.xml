@@ -32,24 +32,28 @@
             android:id="@+id/rbRed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goRed"
             android:text="Red" />
 
         <RadioButton
             android:id="@+id/rbYellow"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goYellow"
             android:text="Yellow" />
 
         <RadioButton
             android:id="@+id/rbBlue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goBlue"
             android:text="Blue" />
 
         <RadioButton
             android:id="@+id/rbGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goGreen"
             android:text="Green" />
     </RadioGroup>
 

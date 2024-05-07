@@ -41,9 +41,27 @@ public class MainActivity extends AppCompatActivity {
         btnChange = (Button) findViewById(R.id.btnChange);
     }
 
-
-    public void goChange(View view) {
+    public void goRed(View view) {
         if (swtch.isChecked())
+            if (rbRed.isChecked()) TL.setBackgroundColor(Color.RED);
+    }
+
+    public void goYellow(View view) {
+        if (swtch.isChecked())
+            if (rbYellow.isChecked()) TL.setBackgroundColor(Color.YELLOW);
+    }
+
+    public void goBlue(View view) {
+        if (swtch.isChecked())
+            if (rbBlue.isChecked()) TL.setBackgroundColor(Color.BLUE);
+    }
+
+    public void goGreen(View view) {
+        if (swtch.isChecked())
+            if (rbGreen.isChecked()) TL.setBackgroundColor(Color.GREEN);
+    }
+    public void goChange(View view) {
+        if (!swtch.isChecked())
         {
             if (rbRed.isChecked()) TL.setBackgroundColor(Color.RED);
             else if (rbYellow.isChecked()) TL.setBackgroundColor(Color.YELLOW);
@@ -51,4 +69,6 @@ public class MainActivity extends AppCompatActivity {
             else if (rbGreen.isChecked()) TL.setBackgroundColor(Color.GREEN);
         }
     }
+
+
 }
